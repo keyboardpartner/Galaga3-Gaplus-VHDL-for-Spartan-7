@@ -1,0 +1,56 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "s7_gaplus_lamp_driver_0_0",
+    "cell_name": "lamp_driver_0",
+    "component_reference": "xilinx.com:module_ref:lamp_driver:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../s7_25_gaplus.gen/sources_1/bd/s7_gaplus/ip/s7_gaplus_lamp_driver_0_0",
+    "parameters": {
+      "component_parameters": {
+        "data_width": [ { "value": "3", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "update_rate": [ { "value": "80", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "s7_gaplus_lamp_driver_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "data_width": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "update_rate": [ { "value": "80", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "artix7", "resolve_type": "generated", "usage": "all" } ],
+        "BASE_BOARD_PART": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "BOARD_CONNECTIONS": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "DEVICE": [ { "value": "xc7a100t", "resolve_type": "generated", "usage": "all" } ],
+        "PACKAGE": [ { "value": "csg324", "resolve_type": "generated", "usage": "all" } ],
+        "PREFHDL": [ { "value": "VHDL", "resolve_type": "generated", "usage": "all" } ],
+        "SILICON_REVISION": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED", "resolve_type": "generated", "usage": "all" } ],
+        "SPEEDGRADE": [ { "value": "-1", "resolve_type": "generated", "usage": "all" } ],
+        "STATIC_POWER": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "TEMPERATURE_GRADE": [ { "value": "", "resolve_type": "generated", "usage": "all" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../s7_25_gaplus.gen/sources_1/bd/s7_gaplus/ip/s7_gaplus_lamp_driver_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "SYSCLK": [ { "direction": "in" } ],
+        "LED_1_IN": [ { "direction": "in" } ],
+        "LED_2_IN": [ { "direction": "in" } ],
+        "LED_COIN_IN": [ { "direction": "in" } ],
+        "LED_1_OUT": [ { "direction": "out" } ],
+        "LED_2_OUT": [ { "direction": "out" } ],
+        "LED_COIN_OUT": [ { "direction": "out" } ]
+      }
+    }
+  },
+  "checksum": "86cf7de9"
+}

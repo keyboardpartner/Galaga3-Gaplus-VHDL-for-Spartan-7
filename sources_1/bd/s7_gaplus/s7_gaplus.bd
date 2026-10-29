@@ -1,0 +1,1047 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8E324ADCCE703E3E",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../s7_25_gaplus.gen/sources_1/bd/s7_gaplus",
+      "name": "s7_gaplus",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "FPGA_GAPLUS_0": "",
+      "dac_0": "",
+      "randomleds_0": "",
+      "slowleds_0": "",
+      "sSegDemo_0": "",
+      "DIP_Switch_0": "",
+      "ilconstant_1": "",
+      "DIP_Switch_1": "",
+      "Sound_Ena": "",
+      "explosion_snd_0": "",
+      "clk_wiz_0": "",
+      "audio_mixer_0": "",
+      "invert_0": "",
+      "btn_invert_0": "",
+      "Invert_when_1": "",
+      "lamp_driver_0": "",
+      "Version_Number": ""
+    },
+    "ports": {
+      "HSYNC": {
+        "direction": "O"
+      },
+      "VSYNC": {
+        "direction": "O"
+      },
+      "AUDIO_PWM": {
+        "direction": "O"
+      },
+      "RED": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "GREEN": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "BLUE": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "LEDS": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "AUDIO_ENA": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "SYSCLK100": {
+        "direction": "I"
+      },
+      "SEGMENTS": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "ANODES": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "UP": {
+        "direction": "I"
+      },
+      "RIGHT": {
+        "direction": "I"
+      },
+      "FIRE": {
+        "direction": "I"
+      },
+      "LEFT": {
+        "direction": "I"
+      },
+      "DOWN": {
+        "direction": "I"
+      },
+      "COIN": {
+        "direction": "I"
+      },
+      "START_1": {
+        "direction": "I"
+      },
+      "START_2": {
+        "direction": "I"
+      },
+      "LAMP_1": {
+        "direction": "O"
+      },
+      "LAMP_2": {
+        "direction": "O"
+      },
+      "LAMP_C": {
+        "direction": "O"
+      },
+      "SERVICE_SW": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "FPGA_GAPLUS_0": {
+        "vlnv": "xilinx.com:module_ref:FPGA_GAPLUS:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_FPGA_GAPLUS_0_0",
+        "xci_path": "ip\\s7_gaplus_FPGA_GAPLUS_0_0\\s7_gaplus_FPGA_GAPLUS_0_0.xci",
+        "inst_hier_path": "FPGA_GAPLUS_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FPGA_GAPLUS",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SYSCLK50": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "PCLK": {
+            "direction": "O"
+          },
+          "RED": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "GREEN": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "BLUE": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "HSYNC": {
+            "direction": "O"
+          },
+          "VSYNC": {
+            "direction": "O"
+          },
+          "SOUND": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "PCM_CLK": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESET",
+                "value_src": "constant"
+              }
+            }
+          },
+          "PCM_KICK": {
+            "direction": "O"
+          },
+          "COIN_LAMP": {
+            "direction": "O"
+          },
+          "START_1_LAMP": {
+            "direction": "O"
+          },
+          "START_2_LAMP": {
+            "direction": "O"
+          },
+          "UP_1": {
+            "direction": "I"
+          },
+          "DOWN_1": {
+            "direction": "I"
+          },
+          "LEFT_1": {
+            "direction": "I"
+          },
+          "RIGHT_1": {
+            "direction": "I"
+          },
+          "FIRE_1": {
+            "direction": "I"
+          },
+          "UP_2": {
+            "direction": "I"
+          },
+          "DOWN_2": {
+            "direction": "I"
+          },
+          "LEFT_2": {
+            "direction": "I"
+          },
+          "RIGHT_2": {
+            "direction": "I"
+          },
+          "FIRE_2": {
+            "direction": "I"
+          },
+          "COIN": {
+            "direction": "I"
+          },
+          "START_1": {
+            "direction": "I"
+          },
+          "START_2": {
+            "direction": "I"
+          },
+          "SERVICE_SW": {
+            "direction": "I"
+          },
+          "DSW0": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "DSW1": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "dac_0": {
+        "vlnv": "xilinx.com:module_ref:dac:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_dac_0_0",
+        "xci_path": "ip\\s7_gaplus_dac_0_0\\s7_gaplus_dac_0_0.xci",
+        "inst_hier_path": "dac_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dac",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_i": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "reset_i": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "dac_i": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "dac_o": {
+            "direction": "O"
+          }
+        }
+      },
+      "randomleds_0": {
+        "vlnv": "xilinx.com:module_ref:randomleds:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_randomleds_0_0",
+        "xci_path": "ip\\s7_gaplus_randomleds_0_0\\s7_gaplus_randomleds_0_0.xci",
+        "inst_hier_path": "randomleds_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "randomleds",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SYSCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "RND_LEDS": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "slowleds_0": {
+        "vlnv": "xilinx.com:module_ref:slowleds:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_slowleds_0_0",
+        "xci_path": "ip\\s7_gaplus_slowleds_0_0\\s7_gaplus_slowleds_0_0.xci",
+        "inst_hier_path": "slowleds_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "slowleds",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SYSCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "LED_IN": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "LED_OUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "sSegDemo_0": {
+        "vlnv": "xilinx.com:module_ref:sSegDemo:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_sSegDemo_0_0",
+        "xci_path": "ip\\s7_gaplus_sSegDemo_0_0\\s7_gaplus_sSegDemo_0_0.xci",
+        "inst_hier_path": "sSegDemo_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sSegDemo",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_i": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst_i": {
+            "direction": "I"
+          },
+          "version_bcd": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "seg_o": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "an_o": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "DIP_Switch_0": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "ilconstant_1": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "DIP_Switch_1": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "Sound_Ena": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
+      },
+      "explosion_snd_0": {
+        "vlnv": "xilinx.com:module_ref:explosion_snd:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_explosion_snd_0_0",
+        "xci_path": "ip\\s7_gaplus_explosion_snd_0_0\\s7_gaplus_explosion_snd_0_0.xci",
+        "inst_hier_path": "explosion_snd_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "explosion_snd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SYSCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "SAMPLE_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "s7_gaplus_FPGA_GAPLUS_0_0_PCM_CLK",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "TRIGGER": {
+            "direction": "I"
+          },
+          "AUDIO": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "17",
+        "xci_name": "s7_gaplus_clk_wiz_0_0",
+        "xci_path": "ip\\s7_gaplus_clk_wiz_0_0\\s7_gaplus_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "151.636"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_out_50"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "20.000"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "100.000"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "audio_mixer_0": {
+        "vlnv": "xilinx.com:module_ref:audio_mixer:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_audio_mixer_0_0",
+        "xci_path": "ip\\s7_gaplus_audio_mixer_0_0\\s7_gaplus_audio_mixer_0_0.xci",
+        "inst_hier_path": "audio_mixer_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "audio_mixer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SYSCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "IN_SIGNED_1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "IN_UNSIGNED": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "AUDIO_UNSIGNED": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "invert_0": {
+        "vlnv": "xilinx.com:module_ref:invert:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_invert_0_0",
+        "xci_path": "ip\\s7_gaplus_invert_0_0\\s7_gaplus_invert_0_0.xci",
+        "inst_hier_path": "invert_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "invert",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "INP": {
+            "direction": "I"
+          },
+          "OUT_INV": {
+            "direction": "O"
+          }
+        }
+      },
+      "btn_invert_0": {
+        "vlnv": "xilinx.com:module_ref:btn_invert:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_btn_invert_0_1",
+        "xci_path": "ip\\s7_gaplus_btn_invert_0_1\\s7_gaplus_btn_invert_0_1.xci",
+        "inst_hier_path": "btn_invert_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "btn_invert",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "COIN": {
+            "direction": "I"
+          },
+          "COIN_INV": {
+            "direction": "O"
+          },
+          "START_1": {
+            "direction": "I"
+          },
+          "START_1_INV": {
+            "direction": "O"
+          },
+          "START_2": {
+            "direction": "I"
+          },
+          "START_2_INV": {
+            "direction": "O"
+          },
+          "FIRE": {
+            "direction": "I"
+          },
+          "FIRE_INV": {
+            "direction": "O"
+          },
+          "UP": {
+            "direction": "I"
+          },
+          "UP_INV": {
+            "direction": "O"
+          },
+          "DOWN": {
+            "direction": "I"
+          },
+          "DOWN_INV": {
+            "direction": "O"
+          },
+          "LEFT": {
+            "direction": "I"
+          },
+          "LEFT_INV": {
+            "direction": "O"
+          },
+          "RIGHT": {
+            "direction": "I"
+          },
+          "RIGHT_INV": {
+            "direction": "O"
+          },
+          "INVERT": {
+            "direction": "I"
+          }
+        }
+      },
+      "Invert_when_1": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
+      },
+      "lamp_driver_0": {
+        "vlnv": "xilinx.com:module_ref:lamp_driver:1.0",
+        "ip_revision": "1",
+        "xci_name": "s7_gaplus_lamp_driver_0_0",
+        "xci_path": "ip\\s7_gaplus_lamp_driver_0_0\\s7_gaplus_lamp_driver_0_0.xci",
+        "inst_hier_path": "lamp_driver_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "lamp_driver",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SYSCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "LED_1_IN": {
+            "direction": "I"
+          },
+          "LED_2_IN": {
+            "direction": "I"
+          },
+          "LED_COIN_IN": {
+            "direction": "I"
+          },
+          "LED_1_OUT": {
+            "direction": "O"
+          },
+          "LED_2_OUT": {
+            "direction": "O"
+          },
+          "LED_COIN_OUT": {
+            "direction": "O"
+          }
+        }
+      },
+      "Version_Number": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0x14102026"
+          },
+          "CONST_WIDTH": {
+            "value": "32"
+          }
+        }
+      }
+    },
+    "nets": {
+      "COIN_SW_1": {
+        "ports": [
+          "COIN",
+          "btn_invert_0/COIN"
+        ]
+      },
+      "DOWN_1": {
+        "ports": [
+          "DOWN",
+          "btn_invert_0/DOWN"
+        ]
+      },
+      "FIRE_1": {
+        "ports": [
+          "FIRE",
+          "btn_invert_0/FIRE"
+        ]
+      },
+      "FPGA_GAPLUS_0_BLUE": {
+        "ports": [
+          "FPGA_GAPLUS_0/BLUE",
+          "BLUE"
+        ]
+      },
+      "FPGA_GAPLUS_0_COIN_LAMP": {
+        "ports": [
+          "FPGA_GAPLUS_0/COIN_LAMP",
+          "lamp_driver_0/LED_COIN_IN"
+        ]
+      },
+      "FPGA_GAPLUS_0_GREEN": {
+        "ports": [
+          "FPGA_GAPLUS_0/GREEN",
+          "GREEN"
+        ]
+      },
+      "FPGA_GAPLUS_0_HSYNC": {
+        "ports": [
+          "FPGA_GAPLUS_0/HSYNC",
+          "HSYNC"
+        ]
+      },
+      "FPGA_GAPLUS_0_PCM_CLK": {
+        "ports": [
+          "FPGA_GAPLUS_0/PCM_CLK",
+          "explosion_snd_0/SAMPLE_CLK"
+        ]
+      },
+      "FPGA_GAPLUS_0_PCM_KICK": {
+        "ports": [
+          "FPGA_GAPLUS_0/PCM_KICK",
+          "explosion_snd_0/TRIGGER"
+        ]
+      },
+      "FPGA_GAPLUS_0_RED": {
+        "ports": [
+          "FPGA_GAPLUS_0/RED",
+          "RED"
+        ]
+      },
+      "FPGA_GAPLUS_0_SOUND": {
+        "ports": [
+          "FPGA_GAPLUS_0/SOUND",
+          "audio_mixer_0/IN_UNSIGNED"
+        ]
+      },
+      "FPGA_GAPLUS_0_START_1_LAMP": {
+        "ports": [
+          "FPGA_GAPLUS_0/START_1_LAMP",
+          "lamp_driver_0/LED_1_IN"
+        ]
+      },
+      "FPGA_GAPLUS_0_START_2_LAMP": {
+        "ports": [
+          "FPGA_GAPLUS_0/START_2_LAMP",
+          "lamp_driver_0/LED_2_IN"
+        ]
+      },
+      "FPGA_GAPLUS_0_VSYNC": {
+        "ports": [
+          "FPGA_GAPLUS_0/VSYNC",
+          "VSYNC"
+        ]
+      },
+      "LEFT_1": {
+        "ports": [
+          "LEFT",
+          "btn_invert_0/LEFT"
+        ]
+      },
+      "RIGHT_1": {
+        "ports": [
+          "RIGHT",
+          "btn_invert_0/RIGHT"
+        ]
+      },
+      "SERVICE_SW_0_1": {
+        "ports": [
+          "SERVICE_SW",
+          "FPGA_GAPLUS_0/SERVICE_SW"
+        ]
+      },
+      "START_1_1": {
+        "ports": [
+          "START_1",
+          "btn_invert_0/START_1"
+        ]
+      },
+      "START_2_1": {
+        "ports": [
+          "START_2",
+          "btn_invert_0/START_2"
+        ]
+      },
+      "SYSCLK100_0_1": {
+        "ports": [
+          "SYSCLK100",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "SYSCLK50_0_1": {
+        "ports": [
+          "clk_wiz_0/clk_out_50",
+          "randomleds_0/SYSCLK",
+          "slowleds_0/SYSCLK",
+          "dac_0/clk_i",
+          "explosion_snd_0/SYSCLK",
+          "audio_mixer_0/SYSCLK",
+          "sSegDemo_0/clk_i",
+          "FPGA_GAPLUS_0/SYSCLK50",
+          "lamp_driver_0/SYSCLK"
+        ]
+      },
+      "UP_1": {
+        "ports": [
+          "UP",
+          "btn_invert_0/UP"
+        ]
+      },
+      "audio_mixer_0_AUDIO_UNSIGNED": {
+        "ports": [
+          "audio_mixer_0/AUDIO_UNSIGNED",
+          "dac_0/dac_i"
+        ]
+      },
+      "btn_invert_0_BTN_INV": {
+        "ports": [
+          "invert_0/OUT_INV",
+          "dac_0/reset_i",
+          "sSegDemo_0/rst_i",
+          "FPGA_GAPLUS_0/RESET"
+        ]
+      },
+      "btn_invert_0_COIN_INV": {
+        "ports": [
+          "btn_invert_0/COIN_INV",
+          "FPGA_GAPLUS_0/COIN"
+        ]
+      },
+      "btn_invert_0_DOWN_INV": {
+        "ports": [
+          "btn_invert_0/DOWN_INV",
+          "FPGA_GAPLUS_0/DOWN_1",
+          "FPGA_GAPLUS_0/DOWN_2"
+        ]
+      },
+      "btn_invert_0_FIRE_INV": {
+        "ports": [
+          "btn_invert_0/FIRE_INV",
+          "FPGA_GAPLUS_0/FIRE_1",
+          "FPGA_GAPLUS_0/FIRE_2"
+        ]
+      },
+      "btn_invert_0_LEFT_INV": {
+        "ports": [
+          "btn_invert_0/LEFT_INV",
+          "FPGA_GAPLUS_0/LEFT_1",
+          "FPGA_GAPLUS_0/LEFT_2"
+        ]
+      },
+      "btn_invert_0_RIGHT_INV": {
+        "ports": [
+          "btn_invert_0/RIGHT_INV",
+          "FPGA_GAPLUS_0/RIGHT_1",
+          "FPGA_GAPLUS_0/RIGHT_2"
+        ]
+      },
+      "btn_invert_0_START_1_INV": {
+        "ports": [
+          "btn_invert_0/START_1_INV",
+          "FPGA_GAPLUS_0/START_1"
+        ]
+      },
+      "btn_invert_0_START_2_INV": {
+        "ports": [
+          "btn_invert_0/START_2_INV",
+          "FPGA_GAPLUS_0/START_2"
+        ]
+      },
+      "btn_invert_0_UP_INV": {
+        "ports": [
+          "btn_invert_0/UP_INV",
+          "FPGA_GAPLUS_0/UP_1",
+          "FPGA_GAPLUS_0/UP_2"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "invert_0/INP"
+        ]
+      },
+      "dac_0_dac_o": {
+        "ports": [
+          "dac_0/dac_o",
+          "AUDIO_PWM"
+        ]
+      },
+      "explosion_snd_0_AUDIO": {
+        "ports": [
+          "explosion_snd_0/AUDIO",
+          "audio_mixer_0/IN_SIGNED_1"
+        ]
+      },
+      "ilconstant_0_dout": {
+        "ports": [
+          "DIP_Switch_0/dout",
+          "FPGA_GAPLUS_0/DSW0"
+        ]
+      },
+      "ilconstant_1_dout": {
+        "ports": [
+          "ilconstant_1/dout"
+        ]
+      },
+      "ilconstant_2_dout": {
+        "ports": [
+          "DIP_Switch_1/dout",
+          "FPGA_GAPLUS_0/DSW1"
+        ]
+      },
+      "ilconstant_3_dout": {
+        "ports": [
+          "Sound_Ena/dout",
+          "AUDIO_ENA"
+        ]
+      },
+      "ilconstant_4_dout": {
+        "ports": [
+          "Invert_when_1/dout",
+          "btn_invert_0/INVERT"
+        ]
+      },
+      "ilconstant_5_dout": {
+        "ports": [
+          "Version_Number/dout",
+          "sSegDemo_0/version_bcd"
+        ]
+      },
+      "lamp_driver_0_LED_1_OUT": {
+        "ports": [
+          "lamp_driver_0/LED_1_OUT",
+          "LAMP_1"
+        ]
+      },
+      "lamp_driver_0_LED_2_OUT": {
+        "ports": [
+          "lamp_driver_0/LED_2_OUT",
+          "LAMP_2"
+        ]
+      },
+      "lamp_driver_0_LED_COIN_OUT": {
+        "ports": [
+          "lamp_driver_0/LED_COIN_OUT",
+          "LAMP_C"
+        ]
+      },
+      "randomleds_0_RND_LEDS": {
+        "ports": [
+          "randomleds_0/RND_LEDS",
+          "slowleds_0/LED_IN"
+        ]
+      },
+      "sSegDemo_0_an_o": {
+        "ports": [
+          "sSegDemo_0/an_o",
+          "ANODES"
+        ]
+      },
+      "sSegDemo_0_seg_o": {
+        "ports": [
+          "sSegDemo_0/seg_o",
+          "SEGMENTS"
+        ]
+      },
+      "slowleds_0_LED_OUT": {
+        "ports": [
+          "slowleds_0/LED_OUT",
+          "LEDS"
+        ]
+      }
+    }
+  }
+}

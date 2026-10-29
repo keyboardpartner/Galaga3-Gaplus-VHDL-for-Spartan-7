@@ -1,0 +1,99 @@
+{
+   "ActiveEmotionalView":"Reduced Jogs",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-686,-542",
+   "ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_AUDIO_PWM -pg 1 -lvl 7 -x 1940 -y 490 -defaultsOSRD
+preplace port port-id_SYSCLK50 -pg 1 -lvl 0 -x 0 -y 30 -defaultsOSRD
+preplace port port-id_LED -pg 1 -lvl 7 -x 1940 -y 850 -defaultsOSRD
+preplace port port-id_F_SCK -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port port-id_F_MOSI -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_F_DS -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port port-id_F_RS -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_F_MISO -pg 1 -lvl 7 -x 1940 -y 790 -defaultsOSRD
+preplace port port-id_HSYNC -pg 1 -lvl 7 -x 1940 -y 230 -defaultsOSRD
+preplace port port-id_VSYNC -pg 1 -lvl 7 -x 1940 -y 250 -defaultsOSRD
+preplace portBus RED -pg 1 -lvl 7 -x 1940 -y 170 -defaultsOSRD
+preplace portBus GREEN -pg 1 -lvl 7 -x 1940 -y 190 -defaultsOSRD
+preplace portBus BLUE -pg 1 -lvl 7 -x 1940 -y 210 -defaultsOSRD
+preplace inst FPGA_GAPLUS_0 -pg 1 -lvl 3 -x 710 -y 150 -swap {0 26 7 2 3 4 5 6 8 9 10 13 11 12 15 17 19 21 1 16 18 20 22 14 23 24 25 27 28 29} -defaultsOSRD -pinY SYSCLK50 20L -pinY RESET 340L -pinY PCLK 220R -pinBusY RED 20R -pinBusY GREEN 40R -pinBusY BLUE 60R -pinY HSYNC 80R -pinY VSYNC 100R -pinBusY SOUND 420R -pinY PCM_CLK 500R -pinY PCM_KICK 520R -pinY COIN_LAMP 800R -pinY START_1_LAMP 760R -pinY START_2_LAMP 780R -pinY UP_1 80L -pinY DOWN_1 120L -pinY LEFT_1 160L -pinY RIGHT_1 200L -pinY FIRE_1 40L -pinY UP_2 100L -pinY DOWN_2 140L -pinY LEFT_2 180L -pinY RIGHT_2 220L -pinY FIRE_2 60L -pinY COIN 240L -pinY START_1 280L -pinY START_2 320L -pinY SERVICE_SW 600L -pinBusY DSW0 700L -pinBusY DSW1 800L
+preplace inst dac_0 -pg 1 -lvl 6 -x 1760 -y 470 -swap {2 0 1 3} -defaultsOSRD -pinY clk_i 260L -pinY reset_i 20L -pinBusY dac_i 160L -pinY dac_o 20R
+preplace inst DIP_Switch_0 -pg 1 -lvl 2 -x 360 -y 830 -defaultsOSRD -pinBusY dout 20R
+preplace inst DIP_Switch_1 -pg 1 -lvl 2 -x 360 -y 930 -defaultsOSRD -pinBusY dout 20R
+preplace inst explosion_snd_0 -pg 1 -lvl 4 -x 1060 -y 610 -defaultsOSRD -pinY SYSCLK 20L -pinY SAMPLE_CLK 40L -pinY TRIGGER 60L -pinBusY AUDIO 20R
+preplace inst audio_mixer_0 -pg 1 -lvl 5 -x 1390 -y 530 -swap {0 2 1 3} -defaultsOSRD -pinY SYSCLK 20L -pinBusY IN_SIGNED_1 100L -pinBusY IN_UNSIGNED 40L -pinBusY AUDIO_UNSIGNED 100R
+preplace inst no_reset -pg 1 -lvl 2 -x 360 -y 630 -defaultsOSRD -pinBusY dout 20R
+preplace inst lamp_driver_0 -pg 1 -lvl 6 -x 1760 -y 830 -defaultsOSRD -pinY SYSCLK 20L -pinY LED_1_IN 80L -pinY LED_2_IN 100L -pinY LED_COIN_IN 120L -pinY LED_BLINK_OUT 20R -pinY LED_1_OUT 40R -pinY LED_2_OUT 60R -pinY LED_COIN_OUT 80R
+preplace inst SPI_inout_small_0 -pg 1 -lvl 2 -x 360 -y 90 -swap {1 2 3 4 18 5 6 7 16 22 24 8 10 12 9 11 13 14 0 21 20 19 15 17 23 25 26 27 28} -defaultsOSRD -pinY SYSCLK 40L -pinY SCK 60L -pinY MOSI 80L -pinY DS_N 100L -pinY RS_N 120L -pinY MISO 20R -pinBusY RSEL 40R -pinY STROBE 60R -pinY COIN 300R -pinY START_1 340R -pinY START_2 380R -pinY FIRE 100R -pinY BOMB 160R -pinY SHIELD 200R -pinY UP 140R -pinY DOWN 180R -pinY LEFT 220R -pinY RIGHT 260R -pinY LAMP_C 20L -pinY LAMP_1 460L -pinY LAMP_2 440L -pinBusY VERSION 180L -pinBusY DATA_18 280R -pinBusY PORT_1 320R -pinY DISABLE_FLASH 360R -pinY RST_LC0 400R -pinY INC_LC0 420R -pinY RST_LC1 440R -pinY INC_LC1 460R
+preplace inst AVR_VERSION -pg 1 -lvl 1 -x 100 -y 250 -defaultsOSRD -pinBusY dout 20R
+preplace inst service_mode -pg 1 -lvl 2 -x 360 -y 730 -defaultsOSRD -pinBusY dout 20R
+preplace inst border_gen_0 -pg 1 -lvl 6 -x 1760 -y 150 -swap {0 1 2 3 4 5 12 7 8 9 10 11 6} -defaultsOSRD -pinBusY RED_IN 20L -pinBusY GREEN_IN 40L -pinBusY BLUE_IN 60L -pinY HSYNC 80L -pinY VSYNC 100L -pinY BORDER 160L -pinY TESTGRID 240L -pinBusY RED_OUT 20R -pinBusY GREEN_OUT 40R -pinBusY BLUE_OUT 60R -pinY HSYNC_OUT 80R -pinY VSYNC_OUT 100R -pinY PIXEL_CLK 220L
+preplace inst border -pg 1 -lvl 5 -x 1390 -y 290 -defaultsOSRD -pinBusY dout 20R
+preplace inst testgrid -pg 1 -lvl 5 -x 1390 -y 710 -defaultsOSRD -pinBusY dout 20R
+preplace netloc AVR_VERSION_dout 1 1 1 NJ 270
+preplace netloc DS_N_0_1 1 0 2 NJ 190 NJ
+preplace netloc FPGA_GAPLUS_0_BLUE 1 3 3 N 210 NJ 210 NJ
+preplace netloc FPGA_GAPLUS_0_COIN_LAMP 1 1 5 200 50 NJ 50 880 950 NJ 950 NJ
+preplace netloc FPGA_GAPLUS_0_GREEN 1 3 3 N 190 NJ 190 NJ
+preplace netloc FPGA_GAPLUS_0_HSYNC 1 3 3 N 230 NJ 230 NJ
+preplace netloc FPGA_GAPLUS_0_PCLK 1 3 3 N 370 NJ 370 NJ
+preplace netloc FPGA_GAPLUS_0_PCM_CLK 1 3 1 N 650
+preplace netloc FPGA_GAPLUS_0_PCM_KICK 1 3 1 N 670
+preplace netloc FPGA_GAPLUS_0_RED 1 3 3 N 170 NJ 170 NJ
+preplace netloc FPGA_GAPLUS_0_SOUND 1 3 2 N 570 NJ
+preplace netloc FPGA_GAPLUS_0_START_1_LAMP 1 1 5 200 1010 NJ 1010 920 910 NJ 910 NJ
+preplace netloc FPGA_GAPLUS_0_START_2_LAMP 1 1 5 180 1030 NJ 1030 900 930 NJ 930 NJ
+preplace netloc FPGA_GAPLUS_0_VSYNC 1 3 3 N 250 NJ 250 NJ
+preplace netloc MOSI_0_1 1 0 2 NJ 170 NJ
+preplace netloc Net 1 2 5 NJ 110 860J 790 NJ 790 NJ 790 NJ
+preplace netloc RS_N_0_1 1 0 2 NJ 210 NJ
+preplace netloc SCK_0_1 1 0 2 NJ 150 NJ
+preplace netloc SPI_inout_small_0_COIN 1 2 1 N 390
+preplace netloc SPI_inout_small_0_START_1 1 2 1 N 430
+preplace netloc SPI_inout_small_0_START_2 1 2 1 N 470
+preplace netloc SYSCLK50_0_1 1 0 6 NJ 30 180 30 560 30 900 550 1200 810 1600
+preplace netloc audio_mixer_0_AUDIO_UNSIGNED 1 5 1 N 630
+preplace netloc border1_dout 1 5 1 1580J 390n
+preplace netloc border_gen_0_BLUE_OUT 1 6 1 NJ 210
+preplace netloc border_gen_0_GREEN_OUT 1 6 1 NJ 190
+preplace netloc border_gen_0_HSYNC_OUT 1 6 1 NJ 230
+preplace netloc border_gen_0_RED_OUT 1 6 1 NJ 170
+preplace netloc border_gen_0_VSYNC_OUT 1 6 1 NJ 250
+preplace netloc btn_invert_0_BTN_INV 1 2 4 540 10 920J 490 NJ 490 NJ
+preplace netloc btn_invert_0_DOWN_INV 1 2 1 520 270n
+preplace netloc btn_invert_0_FIRE_INV 1 2 1 560 190n
+preplace netloc btn_invert_0_LEFT_INV 1 2 1 520 310n
+preplace netloc btn_invert_0_RIGHT_INV 1 2 1 520 350n
+preplace netloc btn_invert_0_UP_INV 1 2 1 560 230n
+preplace netloc dac_0_dac_o 1 6 1 NJ 490
+preplace netloc explosion_snd_0_AUDIO 1 4 1 N 630
+preplace netloc ilconstant_0_dout 1 2 1 NJ 850
+preplace netloc ilconstant_2_dout 1 2 1 NJ 950
+preplace netloc lamp_driver_0_LED_BLINK_OUT 1 6 1 NJ 850
+preplace netloc service_mode1_dout 1 5 1 NJ 310
+preplace netloc service_mode_dout 1 2 1 NJ 750
+levelinfo -pg 1 0 100 360 710 1060 1390 1760 1940
+pagesize -pg 1 -db -bbox -sgen -130 0 2080 1040
+",
+   "Reduced Jogs_ScaleFactor":"0.823077",
+   "Reduced Jogs_TopLeft":"-154,0",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_SYSCLK50_0 -pg 1 -lvl 0 -x -20 -y -210 -defaultsOSRD
+preplace port port-id_HSYNC_0 -pg 1 -lvl 3 -x 500 -y -50 -defaultsOSRD
+preplace port port-id_VSYNC_0 -pg 1 -lvl 3 -x 500 -y -30 -defaultsOSRD
+preplace portBus POUT_0 -pg 1 -lvl 3 -x 500 -y -70 -defaultsOSRD
+preplace inst FPGA_GAPLUS_0 -pg 1 -lvl 1 -x 130 -y -40 -defaultsOSRD
+preplace inst dac_0 -pg 1 -lvl 2 -x 370 -y 90 -defaultsOSRD
+preplace netloc SYSCLK50_0_1 1 0 1 N -210
+preplace netloc FPGA_GAPLUS_0_POUT 1 1 2 N -70 N
+preplace netloc FPGA_GAPLUS_0_HSYNC 1 1 2 N -50 N
+preplace netloc FPGA_GAPLUS_0_VSYNC 1 1 2 N -30 N
+levelinfo -pg 1 -20 130 370 500
+pagesize -pg 1 -db -bbox -sgen -160 -270 640 460
+"
+}
+0
